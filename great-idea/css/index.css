@@ -18,7 +18,6 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -50,7 +49,9 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
 	max-width: 100%;
-    box-sizing: border-box;
+}
+.wrap{
+	margin: 0 10vw;
 }
 
 html, body {
@@ -64,90 +65,213 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
-
-nav{
+/* Your code starts here! */
+/*{
+	max-width: 100%;
+}*/
+header nav{
 	display:flex;
 	justify-content: space-evenly;
-	allign-items: center
-	width: 30%;
+	width: 100%;
 }
-.firstpic{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: auto;
-	margin-bottom: auto;
+.logo{
+	width:20%;
+	margin-top: 2%;
+}
+
+header .navigation{
+	display:flex;
+	justify-content: space-evenly;
+	width:60%;
+	margin-top: 3%;
+}
+a{
+	text-decoration: none;
+	color: grey;
+}
+.picture{
+	width: 40%;
+}
+
+.top{
+	text-align: center;
+	font-size: 80px;
+	margin-top: 10%;
+}
+.ondemand{
+	display: inline-block;
+	margin-right: 10%;
+}
+.top button{
+	font-size: 50px;
+}
+.first-pic{
+	display: inline-block;
+text-align: right; 
+}
+.middle-img{
+	margin-left: 10%;
+}
+.top-section{
+	border-top: 2px solid black;
+	padding-top: 5%;
+	margin: 5%;
+	font-size: 20px;
+	columns: 100px 2;
+}
+.feat{
+	font-size: 25px;
+	font-style: bold;
+	margin: 3%;
+}
+.about{
+	font-size: 25px;
+	font-style: bold;
+	margin: 5% 3% 3% 3%;
+}
+
+
+.bottom-section{
+	
+	margin: 5%;
+	font-size: 20px;
+	columns: 100px 3;
+}
+.services{
+	font-size: 25px;
+	font-weight: bold;
+}
+.product{
+	font-size: 25px;
+	font-weight: bold;
+	margin: 3%;
+}
+.vision{
+	font-size: 25px;
+	font-weight: bold;
+	margin: 3%;
+}
+.contact{
+	margin-left: 5%;
+	font-size: 20px;
+	columns: 100px 1;
+	
+}
+.con{
+	border-top: solid black;
+	font-weight: bold;
+	padding-top: 3%;
+}
+
+.one{
+	
+	margin:0 1;
+	text-align: left;
+}
+.two{
+	
+	text-align: right;
+
+}
+
+footer{
+	margin-top: 10%;
+	text-align: center;
+}
+.mainpic{
+	margin: 5% 10% 5% 10%;
+}
+.services{
+	font-size: 30px;
+	font-style: bold;
 }
 .border{
 	border-bottom: 2px solid black;
-	margin: 10px 2px;
-	font-size: 18px;
+	margin-bottom: 5%;
+	padding-bottom: 5%;
+	font-size: 20px;
 }
-
-.box-one{
-	background-color: lightgrey;
-  width: 280px;
-  border: 3px solid grey;
-  padding: 20px;
-  margin: 20px;
-}
-.box-two{
-	background-color: lightgrey;
-  width: 280px;
-  border: 3px solid grey;
-  padding: 20px;
-  margin: 20px;
+.learn{
+		border-radius: 4px;
+		padding: 2% 5%;
+        background-color:white;
+        color:black;
+		border:1px solid black;
+		margin-top: 3%;
 }
 .section-one{
 	display: flex;
 	justify-content: space-evenly;
+	margin-bottom: 5%;
 }
-.box-three{
-	background-color: lightgrey;
-  width: 280px;
-  border: 3px solid grey;
-  padding: 20px;
-  margin: 20px;
+.box-one{
+	background-color: rgb(219, 210, 210);
+	border:2px solid black;
+	width: 40%;
+	padding: 3%;
 }
-.box-four{
-	background-color: lightgrey;
-  width: 280px;
-  border: 3px solid grey;
-  padding: 20px;
-  margin: 20px;
+.box-two{
+	background-color: rgb(219, 210, 210);
+	border:2px solid black;
+	width: 40%;
+	padding: 3%;
+
 }
 .section-two{
 	display: flex;
 	justify-content: space-evenly;
+	margin-bottom: 5%;
 }
-.box-five{
-	background-color: lightgrey;
-  width: 280px;
-  border: 3px solid grey;
-  padding: 20px;
-  margin: 20px;
-}
+.box-three{
+	background-color: rgb(219, 210, 210);
+	border:2px solid black;
+	width: 40%;
+	padding: 3%;
 
-.box-six{
-	background-color: lightgrey;
-  width: 280px;
-  border: 3px solid grey;
-  padding: 20px;
-  margin: 20px;
+}
+.box-four{
+	background-color: rgb(219, 210, 210);
+	border:2px solid black;
+	width: 40%;
+	padding: 3%;
+
 }
 .section-three{
 	display: flex;
 	justify-content: space-evenly;
+	margin-bottom: 5%;
 }
-.pictwo{
-	display: block;
-	margin-left: auto;
-	
+.box-five{
+	background-color: rgb(219, 210, 210);
+	border:2px solid black;
+	width: 40%;
+	padding: 3%;
+
 }
-.pone{
-	border-top: 3px solid black;
+.box-six{
+	background-color: rgb(219, 210, 210);
+	border:2px solid black;
+	width: 40%;
+	padding: 3%;
+
+}
+.last-container{
+	display: flex;
+	flex-direction: row-reverse;
+	border-top: 2px solid black;
+	padding-top: 5%;
+}
+.child{
+	margin-left: 10%;
+}
+.ptwo{
+	margin-bottom: 3%;
+	width: 40%;
 }
 .list{
 	list-style-type: square;
+}
+.copy{
+	margin: 10% 0;
+	text-align: center;
 }
